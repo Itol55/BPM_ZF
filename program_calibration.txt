@@ -1,0 +1,5 @@
+findHeartAutomatically	1
+findHeartAutomaticallMethod	1
+heartArea	20
+timeSeriesError	30
+timeSkip	0
