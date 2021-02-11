@@ -1,5 +1,7 @@
-findHeartAutomatically	1
+findHeartAutomatically	0
 findHeartAutomaticallMethod	1
 heartArea	20
 timeSeriesError	30
 timeSkip	0
+saveVideo	1
+doNotDisplayMedia	0

@@ -1,4 +1,7 @@
-function [cropX, cropY, cropLengthX, cropLengthY ] = determineDataCroppingFrame( firstPointX, firstPointY, secondPointX, secondPointY )
+function [cropX, cropY, cropLengthX, cropLengthY ] = ...
+    determineDataCroppingFrame( firstPointX, firstPointY, secondPointX, ...
+    secondPointY )
+    
     if firstPointX < secondPointX && firstPointY < secondPointY
         cropX = firstPointX;
         cropY = firstPointY;

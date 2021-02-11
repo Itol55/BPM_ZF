@@ -1,9 +1,12 @@
-function meanValueArray = averageValuePixelArray( videoFrameCell, frames, cropX, cropY, cropLengthX, cropLengthY )
+function meanValueArray = averageValuePixelArray( videoFrameCell, ...
+    frames, cropX, cropY, cropLengthX, cropLengthY )
+
     meanValueArrayTMP = [];
     for ii = 1 : frames
         videoFrame = videoFrameCell{ ii };
         greenChannel = videoFrame( :, :, 2 );
-        greenChannelCropped = imcrop( greenChannel,[ cropX cropY cropLengthX cropLengthY ] );
+        greenChannelCropped = imcrop( greenChannel,[ cropX cropY ...
+            cropLengthX cropLengthY ] );
         meanValueArray( ii + 1 ) = mean2( greenChannelCropped );
         meanValueArrayTMP( ii ) = mean2( greenChannelCropped );
     end
